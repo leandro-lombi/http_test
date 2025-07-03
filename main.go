@@ -9,6 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/hello-world", api.HelloWorld)
 	http.HandleFunc("/hello-person", api.HelloPerson)
-	
+	http.HandleFunc("/upload", api.UploadFile)
+
 	http.ListenAndServe(":8080", nil)
 }
