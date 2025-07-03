@@ -13,3 +13,7 @@ curl -X POST http://localhost:8080/hello-person -d '{"name": "leandro"}'
 ```bash
 curl -F file=@./api/testdata/image.png http://localhost:8080/upload
 ```
+
+```bash
+http# go test ./... -v
+```
