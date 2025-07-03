@@ -8,5 +8,7 @@ import (
 
 func main() {
 	http.HandleFunc("/hello-world", api.HelloWorld)
+	http.HandleFunc("/hello-person", api.HelloPerson)
+	
 	http.ListenAndServe(":8080", nil)
 }
